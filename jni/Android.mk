@@ -30,10 +30,12 @@ LOCAL_SRC_FILES	:= \
 	vpfopen.c \
 	vpinit.c \
 	vpopen.c \
-	regex.c
+	regex.c \
+	dummy.c
 
 LOCAL_MODULE	:= cscope
-LOCAL_CFLAGS	:= -DHAVE_CONFIG_H -lncurses
+LOCAL_CFLAGS	:= -DHAVE_CONFIG_H
+#LOCAL_LD_LIBS	:= ncurses
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/. $(LOCAL_PATH)/../include
 
 include $(BUILD_EXECUTABLE)
