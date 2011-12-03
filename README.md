@@ -2,7 +2,10 @@ Cscope for Android
 ==================
 
 Port Cscope 15.9a to Android NDK-based executable file.
+
 Cscope: http://cscope.sourceforge.net/
+
+This version not support ncurses. You must use command line options.
 
 Original Cscope is BSD License, but some GPL codes included:
 regex.c, regex.h, curses.h, ncurses_dll.h, unctrl.h
